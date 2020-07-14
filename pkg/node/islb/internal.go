@@ -254,9 +254,10 @@ func getPubs(data proto.RoomInfo) (proto.GetPubResp, *nprotoo.Error) {
 			}
 		}
 		pub := proto.PubInfo{
-			MediaInfo: *info,
-			Info:      extraInfo,
-			Tracks:    tracks,
+			MediaInfo:   *info,
+			Info:        extraInfo,
+			Tracks:      tracks,
+			Description: "",
 		}
 		pubs = append(pubs, pub)
 	}
