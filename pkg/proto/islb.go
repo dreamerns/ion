@@ -4,7 +4,7 @@ type PubInfo struct {
 	MediaInfo
 	Info        ClientUserInfo `json:"info"`
 	Tracks      TrackMap       `json:"tracks"`
-	Description string         `json:"tracks,omitempty"`
+	Description string         `json:"description,omitempty"`
 }
 
 type GetPubResp struct {

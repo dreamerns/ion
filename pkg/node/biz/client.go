@@ -50,7 +50,7 @@ func join(peer *signal.Peer, msg proto.JoinMsg) (interface{}, *nprotoo.Error) {
 				log.Errorf("Unmarshal pub response %v", err)
 				return
 			}
-			log.Infof("IslbGetPubs: result=%v", result)
+			log.Infof("IslbGetPubs: result=%v", resMsg)
 			for _, pub := range resMsg.Pubs {
 				if pub.MID == "" {
 					continue
