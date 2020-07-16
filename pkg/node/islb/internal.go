@@ -166,7 +166,6 @@ func streamAdd(data proto.StreamAddMsg) (interface{}, *nprotoo.Error) {
 	if err != nil {
 		log.Errorf("Set: %v ", err)
 	}
-	log.Infof("!nn! - descField: %s", data.Description)
 
 	for msid, track := range data.Tracks {
 		var infos []proto.TrackInfo
